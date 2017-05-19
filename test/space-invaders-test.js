@@ -18,6 +18,7 @@ describe('space invaders', () => {
     })
 
     it('should return "had no effect" when the crew member tries to use their special ability', function() {
+      debugger
       expect(tristan.engageWarpDrive()).toBe('had no effect')
       expect(jon.setsInvisibility()).toBe('had no effect')
       expect(katie.chargePhasers()).toBe('had no effect')
@@ -85,6 +86,7 @@ describe('space invaders', () => {
     })
 
     it('should have its warp drive set to "engaged" only when the pilot uses `engageWarpDrive`', function() {
+      // debugger
       jon.engageWarpDrive()
       expect(spaceship.warpDrive).toBe('disengaged')
       tristan.engageWarpDrive()
